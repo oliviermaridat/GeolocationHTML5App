@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>HTML5 - Geolocation API</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" charset="utf-8" src="js/lib/phonegap.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile.css" /> 
+	<link rel="stylesheet" type="text/css" title="CSS" href="css/style.css" />
+	<script type="text/javascript" src="js/lib/jquery.js"></script> 
+	<script type="text/javascript" src="js/lib/jquery.mobile.js"></script>
+	<script type="text/javascript" src="js/lib/Geo.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/google-maps-utils.js"></script>
+	<script type="text/javascript" src="js/geolocation.js"></script>
+</head>
+<body>
+
+<section data-role="page">
+
+	<header data-role="header">
+		<h1>Geolocation API</h1>
+	</header>
+	
+	<div data-role="content">	
+		<nav>
+			<button id="geolocaliser">Géolocaliser</button>
+			<button id="geolocaliserEtVisualiser">Géolocaliser sur une carte</button>
+			<button id="nearByTweets">Tweets dans le coin ?</button>
+		</nav>
+		
+		<div id="resultat"></div>
+		<div id="map"></div>
+		<dl id="tweets"></dl>
+	</div>
+</section>
+
+</body>
+</html>
